@@ -1,9 +1,15 @@
-var textHolder = document.getElementById('textarea').value;
-var button = document.getElementById('create');
+var Createbutton = document.getElementById("create");
+var Deletebutton = document.getElementById("clear");
 
 button.addEventListener("click", createCard);
 
 function createCard() {
+	var textElement = document.getElementById("userInput");
+	//console.log("verify textElement", textElement.value);
+	// var textCard = textElement.value;
+	 var textCard = document.getElementById("output");
+	 textCard.innerHTML = "<div>" + textElement.value + "</div>";
 
+	console.log("e", textCard);
 }
 
