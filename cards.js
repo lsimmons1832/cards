@@ -1,7 +1,7 @@
 var Createbutton = document.getElementById("create");
-var Deletebutton = document.getElementById("clear");
+var Deletebutton = document.getElementById("delete");
 
-button.addEventListener("click", createCard);
+Createbutton.addEventListener("click", createCard);
 
 function createCard() {
 	var textElement = document.getElementById("userInput");
