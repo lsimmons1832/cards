@@ -1,15 +1,18 @@
 var Createbutton = document.getElementById("create");
-var Deletebutton = document.getElementById("delete");
 
 Createbutton.addEventListener("click", createCard);
 
 function createCard() {
 	var textElement = document.getElementById("userInput");
-	//console.log("verify textElement", textElement.value);
-	// var textCard = textElement.value;
+
 	 var textCard = document.getElementById("output");
-	 textCard.innerHTML = "<div>" + textElement.value + "</div>";
+	 textCard.innerHTML = "<div>" + textElement.value + "</div><button id='delete'>Delete</button>";
+	
+	}
 
-	console.log("e", textCard);
-}
+var Deletebutton = document.getElementById("delete");
+Deletebutton.addEventListener("click", deleteCard);
 
+		function deleteCard() {
+			event.target.parentNode.remove();
+		}
