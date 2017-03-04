@@ -1,18 +1,21 @@
-var Createbutton = document.getElementById("create");
+var createButton = document.getElementById("create");
 
-Createbutton.addEventListener("click", createCard);
+createButton.addEventListener("click", createCard);
 
 function createCard() {
 	var textElement = document.getElementById("userInput");
 
 	 var textCard = document.getElementById("output");
-	 textCard.innerHTML = "<div>" + textElement.value + "</div><button id='delete'>Delete</button>";
+	 textCard.innerHTML += "<div>" + textElement.value + "<button id='delete'>Delete</button></div>";
 	
 	}
 
-var Deletebutton = document.getElementById("delete");
-Deletebutton.addEventListener("click", deleteCard);
+
+var deleteButton = document.getElementById("delete");
+deleteButton.addEventListener("click", deleteCard);
 
 		function deleteCard() {
-			event.target.parentNode.remove();
+			if (node.parentNode) {
+  	node.parentNode.removeChild(node);
 		}
+	}
