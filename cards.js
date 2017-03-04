@@ -6,16 +6,13 @@ function createCard() {
 	var textElement = document.getElementById("userInput");
 
 	 var textCard = document.getElementById("output");
-	 textCard.innerHTML += "<div>" + textElement.value + "<button id='delete'>Delete</button></div>";
-	
+	 textCard.innerHTML += "<div class='card'>" + textElement.value +"<img src='http://placeimg.com/200/200/tech'>"+"<button class='delete'>Delete</button></div>";
 	}
 
 
-var deleteButton = document.getElementById("delete");
-deleteButton.addEventListener("click", deleteCard);
-
-		function deleteCard() {
-			if (node.parentNode) {
-  	node.parentNode.removeChild(node);
+//var deleteButton = document.getElementById("delete");
+document.body.addEventListener("click", function(event){
+	if (event.target.className === "delete") {
+  	event.target.parentNode.remove();
 		}
-	}
+});
