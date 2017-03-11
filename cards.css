@@ -1,0 +1,22 @@
+body {
+	background-color: #f4f4f4;
+}
+
+.output{
+	display: flex;
+	flex-direction: row;
+}
+
+.card{
+	margin: 25px;
+	width: 200px;
+	display: inline-block;
+
+}
+
+.delete{
+	top: 220px;
+	justify-content: center;
+}
+
+ 
