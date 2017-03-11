@@ -1,5 +1,6 @@
 body {
 	background-color: #f4f4f4;
+	color: brown;
 }
 
 .output{
@@ -11,6 +12,7 @@ body {
 	margin: 25px;
 	width: 200px;
 	display: inline-block;
+	border: 2px solid black;
 
 }
 
