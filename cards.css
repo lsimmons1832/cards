@@ -8,12 +8,15 @@ body {
 }
 
 .card{
-	margin-top: 25px;
+	margin: 25px;
 	width: 200px;
 	display: inline-block;
+
 }
 
 .delete{
 	top: 220px;
 	justify-content: center;
 }
+
+ 
